@@ -6,9 +6,9 @@ import "swiper/css/pagination";
 
 // Image variables
 import dogRaincoat from "../assets/images/homebanner1.png";
-import umbrella from "../assets/images//umbrella.png";
-import puppy from "../assets/images//puppy.png";
-import dogFood from "../assets/images//dog-food.png";
+import umbrella from "../assets/images/umbrella.png";
+import puppy from "../assets/images/puppy.png";
+import dogFood from "../assets/images/dog-food.png";
 
 const bannerImages = { dogRaincoat, umbrella, puppy, dogFood };
 
