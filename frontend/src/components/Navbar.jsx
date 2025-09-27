@@ -6,8 +6,8 @@ import { MdEmail, MdSearch } from "react-icons/md";
 import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
 import api from "../api/axios";
+import logo from "../assets/images/logo.png";
 
-const logo = "../src/assets/images/logo.png";
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
