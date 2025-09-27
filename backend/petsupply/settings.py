@@ -49,9 +49,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'petsupply.urls'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",   # React local
+    "https://petpalooza-website-fzys.vercel.app",   # React local
 ]
-CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
