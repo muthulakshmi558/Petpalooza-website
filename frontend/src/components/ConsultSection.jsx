@@ -1,8 +1,10 @@
-// src/pages/ConsultVet.jsx
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
+import VetBanner from "../assets/images/consultsection.png"; 
 
 const ConsultVetSection = () => {
-  // Example experts data (you can replace with API or backend data)
+      const navigate = useNavigate();
   const experts = [
     {
       name: "Dr. Anitha Rao",
@@ -28,7 +30,7 @@ const ConsultVetSection = () => {
         <div className="w-full md:w-[70%] text-center">
           {/* Image */}
           <img
-            src="https://images.unsplash.com/photo-1558788353-f76d92427f16"
+            src={VetBanner} // 🔹 Use imported variable
             alt="Vet with Dog"
             className="w-full h-[350px] object-cover rounded-lg shadow-lg"
           />
@@ -40,8 +42,11 @@ const ConsultVetSection = () => {
             our vets.
           </p>
 
-          {/* Button */}
-          <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md shadow">
+          {/* Button with navigation */}
+          <button
+            onClick={() => navigate("/consult-checkout")}
+            className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md shadow"
+          >
             Consult Now
           </button>
         </div>

@@ -15,6 +15,9 @@ import {
   Scale,
 } from "lucide-react";
 
+// 🔹 Import banner image as variable
+import ConsultBanner from "../assets/images/consult.png";
+
 const ConsultVet = () => {
   const navigate = useNavigate();
 
@@ -45,7 +48,7 @@ const ConsultVet = () => {
       {/* Banner */}
       <div className="relative w-full">
         <img
-          src="../src/assets/images/consult.png"
+          src={ConsultBanner} // 🔹 Use imported variable
           alt="Vet with Dog"
           className="w-full h-[350px] object-cover"
         />

@@ -1,5 +1,7 @@
 // src/pages/ConsultCheckout.jsx
 import React from "react";
+// 🔹 Import the banner image
+import ConsultBanner from "../assets/images/consult.png";
 
 const ConsultCheckout = () => {
   return (
@@ -7,7 +9,7 @@ const ConsultCheckout = () => {
       {/* Banner */}
       <div className="w-full flex justify-center">
         <img
-          src="../src/assets/images/consult.png"
+          src={ConsultBanner} // 🔹 Use the imported variable
           alt="Vet with Dog"
           className="w-full md:w-[70%] h-[300px] object-cover rounded-lg shadow-md"
         />
@@ -20,7 +22,9 @@ const ConsultCheckout = () => {
         </h2>
 
         <div className="space-y-3 text-gray-700">
-          <p>✔️ Consultation Fee: <span className="font-semibold">₹299</span></p>
+          <p>
+            ✔️ Consultation Fee: <span className="font-semibold">₹299</span>
+          </p>
           <p>✔️ Free Delivery on Medicines</p>
           <p>✔️ Cash on Delivery Available</p>
         </div>

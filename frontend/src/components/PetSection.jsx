@@ -1,12 +1,9 @@
 // src/pages/PetServices.jsx
 import React from "react";
+// 🔹 Import the middle banner image
+import PetServiceBanner from "../assets/images/petservice.png";
 
 const PetServices = () => {
-  // Store images in variables
-  const bannerImages = {
-    middle: "../src/assets/images/petservice.png",
-  };
-
   return (
     <div className="w-full px-6 md:px-12 py-10">
       {/* Header */}
@@ -49,7 +46,7 @@ const PetServices = () => {
         {/* Middle Image */}
         <div>
           <img
-            src={bannerImages.middle}
+            src={PetServiceBanner} // 🔹 Use imported variable
             alt="Dog and Cat"
             className="w-full h-full object-cover rounded-lg"
           />

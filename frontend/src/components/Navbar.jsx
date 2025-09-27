@@ -66,10 +66,12 @@ const Navbar = () => {
 
       {/* Middle Row */}
       <div className="bg-[#2345c5] text-white px-6 py-3 flex items-center justify-between relative">
-        {/* Logo */}
-        <div className="flex items-center gap-2 font-bold text-lg">
+      {/* Logo */}
+      <div className="flex items-center gap-2 font-bold text-lg">
+        <Link to="/">
           <img src={logo} alt="PetPalooza" className="w-20 h-20" />
-        </div>
+        </Link>
+      </div>
 
         {/* Desktop Search */}
         <div ref={searchRef} className="relative hidden md:flex flex-1 justify-center px-4">
@@ -101,7 +103,6 @@ const Navbar = () => {
 
         {/* Links */}
         <div className="hidden md:flex items-center gap-6 text-sm font-medium">
-          <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
 

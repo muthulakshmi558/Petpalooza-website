@@ -9,6 +9,10 @@ import {
   Heart,
 } from "lucide-react";
 
+// 🔹 Import banner images as variables
+import PetBannerLeft from "../assets/images/petbanner1.png";
+import PetBannerRight from "../assets/images/petbanner2.png";
+
 // Service list
 const services = [
   { icon: <Scissors size={32} />, title: "Grooming" },
@@ -18,12 +22,6 @@ const services = [
   { icon: <Stethoscope size={32} />, title: "Veterinary Care" },
   { icon: <Heart size={32} />, title: "Adoption" },
 ];
-
-// Banner images (variables)
-const bannerImages = {
-  left: "../src/assets/images/petbanner1.png",
-  right: "../src/assets/images/petbanner2.png",
-};
 
 const PetServiceBanner = () => {
   return (
@@ -36,12 +34,12 @@ const PetServiceBanner = () => {
       {/* Banner */}
       <div className="relative w-full h-60 md:h-80 lg:h-96 flex items-center justify-center">
         <img
-          src={bannerImages.left}
+          src={PetBannerLeft} // 🔹 Use imported variable
           alt="Dog Left"
           className="absolute left-0 top-0 w-1/2 h-full object-cover"
         />
         <img
-          src={bannerImages.right}
+          src={PetBannerRight} // 🔹 Use imported variable
           alt="Dog Right"
           className="absolute right-0 top-0 w-1/2 h-full object-cover"
         />

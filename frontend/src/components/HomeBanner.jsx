@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 // Image variables
 import dogRaincoat from "../assets/images/homebanner1.png";
@@ -38,9 +39,11 @@ const HomeBanner = () => {
               </h2>
               <p className="mt-2 text-sm">100% Water Proof</p>
               <img src={bannerImages.umbrella} alt="Umbrella" className="w-16 my-4" />
-              <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full shadow-lg">
+            <Link to="/dogs">
+              <button className="mt-6 bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full shadow-lg w-max">
                 Shop Now
               </button>
+            </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -70,9 +73,11 @@ const HomeBanner = () => {
                   NO TOXIC TOYS
                 </p>
               </div>
+            <Link to="/dogs">
               <button className="mt-6 bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full shadow-lg w-max">
                 Shop Now
               </button>
+            </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -88,9 +93,11 @@ const HomeBanner = () => {
               <p className="mt-2 text-sm text-gray-700">
                 Boost your pet’s energy with nutritious meals made with love.
               </p>
-              <button className="mt-6 bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full shadow-lg">
+            <Link to="/dogs">
+              <button className="mt-6 bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full shadow-lg w-max">
                 Shop Now
               </button>
+            </Link>
             </div>
             <div className="w-full md:w-1/2 h-full">
               <img

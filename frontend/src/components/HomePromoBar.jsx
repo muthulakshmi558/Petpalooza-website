@@ -1,4 +1,8 @@
 // src/components/PromoBar.jsx
+import { Link } from "react-router-dom";
+
+
+
 const HomePromoBar = () => {
   // Image variable
   const offerImage = "../src/assets/images/home_promo.png"; // change to your image path
@@ -20,9 +24,11 @@ const HomePromoBar = () => {
         />
 
         {/* Shop Now Button */}
-        <button className="bg-[#1C49C2] text-white text-md font-semibold px-3 py-1 rounded-md shadow hover:bg-blue-600 transition">
-          Shop Now
-        </button>
+            <Link to="/dogs">
+              <button className="mt-6 bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full shadow-lg w-max">
+                Shop Now
+              </button>
+            </Link>
       </div>
     </div>
   );
