@@ -5,12 +5,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // Image variables
-const bannerImages = {
-  dogRaincoat: "../src/assets/images/homebanner1.png",
-  umbrella: "../src/assets/images/umbrella.png",
-  puppy: "../src/assets/images/puppy.png",
-  dogFood: "../src/assets/images/dog-food.png",
-};
+import dogRaincoat from "../assets/images/homebanner1.png";
+import umbrella from "../assets/images//umbrella.png";
+import puppy from "../assets/images//puppy.png";
+import dogFood from "../assets/images//dog-food.png";
+
+const bannerImages = { dogRaincoat, umbrella, puppy, dogFood };
 
 const HomeBanner = () => {
   return (
