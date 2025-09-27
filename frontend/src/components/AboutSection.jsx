@@ -5,7 +5,7 @@ export default function AboutSection() {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-    api.get("/aboutpage/1/") // assuming first AboutPage
+    api.get("/aboutpage/1/") 
       .then((res) => setAbout(res.data))
       .catch((err) => console.error("Error fetching about:", err));
   }, []);

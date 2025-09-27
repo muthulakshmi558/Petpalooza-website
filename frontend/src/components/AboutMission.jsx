@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
-import api from "../api/axios"; // adjust path if needed
-
+import api from "../api/axios"; 
 export default function AboutMission() {
   const [mission, setMission] = useState(null);
 
-  // 🔹 Fetch content from backend API via axios
   useEffect(() => {
     const fetchMission = async () => {
       try {
-        const res = await api.get("/about/"); // GET http://localhost:8000/api/about/
-        // if multiple records, take first one
+        const res = await api.get("/about/"); 
         setMission(Array.isArray(res.data) ? res.data[0] : res.data);
       } catch (err) {
         console.error("Error fetching mission:", err);
@@ -27,7 +24,6 @@ export default function AboutMission() {
     <section className="max-w-6xl mx-auto px-4 md:px-8">
 
 
-      {/* Image with overlay */}
       <div className="relative">
         <img
           src={mission.image}
@@ -35,7 +31,6 @@ export default function AboutMission() {
           className="w-full rounded-lg shadow-md"
         />
 
-        {/* Overlay text */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12 md:w-3/4 bg-black/70 text-white p-6 rounded-xl text-center">
           <h2 className="text-xl md:text-2xl font-bold mb-2">
             {mission.title}
