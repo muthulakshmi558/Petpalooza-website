@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body { font-family: Arial, sans-serif; background:#f9f9f9; padding:20px; }
+      .container { background:#fff; padding:20px; border-radius:10px; max-width:600px; margin:auto; }
+      h2 { color:#2d89ef; }
+      p { color:#333; }
+      .btn {
+        display:inline-block;
+        padding:10px 20px;
+        margin-top:15px;
+        background:#2d89ef;
+        color:white;
+        text-decoration:none;
+        border-radius:5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Welcome {{ user.username }} 🎉</h2>
+      <p>Thank you for registering on <b>Pet Supply Website</b>.</p>
+      <p>We’re excited to have you on board. Start exploring products and add them to your cart!</p>
+      <a href="http://127.0.0.1:3000/" class="btn">Start Shopping</a>
+      <p style="margin-top:20px;font-size:12px;color:#888;">This is an automated mail. Please do not reply.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.swiper-3d {
+  perspective: 1200px;
+}
+
+.swiper-3d .swiper-slide,
+.swiper-3d .swiper-cube-shadow {
+  transform-style: preserve-3d;
+}
+
+.swiper-3d.swiper-pagination-hidden {
+  opacity: 0;
+}
