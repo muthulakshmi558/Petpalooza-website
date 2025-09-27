@@ -2,16 +2,24 @@
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const petCategories = [
-  { name: "Dog", img: "../src/assets/images/dog.png" },
-  { name: "Cat", img: "../src/assets/images/cat.png" },
-  { name: "Hamster", img: "../src/assets/images/hamster.png" },
-  { name: "Guineapigs", img: "../src/assets/images/guineapigs.png" },
-  { name: "Fish", img: "../src/assets/images/fish.png" },
-  { name: "Rats", img: "../src/assets/images/rats.png" },
-  { name: "Rabbits", img: "../src/assets/images/rabbits.png" },
-];
+// Pet category images
+import dog from "../assets/images/dog.png";
+import cat from "../assets/images/cat.png";
+import hamster from "../assets/images/hamster.png";
+import guineapigs from "../assets/images/guineapigs.png";
+import fish from "../assets/images/fish.png";
+import rats from "../assets/images/rats.png";
+import rabbits from "../assets/images/rabbits.png";
 
+const petCategories = [
+  { name: "Dog", img: dog },
+  { name: "Cat", img: cat },
+  { name: "Hamster", img: hamster },
+  { name: "Guineapigs", img: guineapigs },
+  { name: "Fish", img: fish },
+  { name: "Rats", img: rats },
+  { name: "Rabbits", img: rabbits },
+];
 const HomeShop = () => {
   const [startIndex, setStartIndex] = useState(0);
   const visibleCount = 5;
