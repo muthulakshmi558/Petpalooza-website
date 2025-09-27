@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import api from "../api/axios";
+// 🔹 Import static image as a variable
+import DogPlaceholder from "../assets/images/dog_product.png";
 
 const HomeGallery = () => {
   const [dogs, setDogs] = useState([]);
@@ -35,7 +37,7 @@ const HomeGallery = () => {
         {/* Left Side - Static Dog Image */}
         <div className="w-full lg:w-1/3 flex justify-center mb-6 lg:mb-0">
           <img
-            src="../src/assets/images/dog_product.png"
+            src={DogPlaceholder} // 🔹 Use imported variable
             alt="Dog"
             className="w-[80%] h-auto rounded-xl shadow-lg"
           />
